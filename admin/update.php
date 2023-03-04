@@ -467,7 +467,7 @@ while ($row = mysqli_fetch_array($result)) {
                   </li> -->
                   <li class="flex">
                     <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                      href="#">
+                      href="logout.php">
                       <svg class="w-4 h-4 mr-3" aria-hidden="true" fill="none" stroke-linecap="round"
                         stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                         <path
@@ -488,15 +488,15 @@ while ($row = mysqli_fetch_array($result)) {
           <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
             Update Activity
           </h2>
-          <div class="w-full overflow-hidden rounded-lg shadow-xs bg-white p-4">
+          <div class="w-full overflow-hidden rounded-lg shadow-xs bg-white p-4 dark:bg-gray-800">
             <div class="w-full overflow-x-auto">
               <form class="" action="update_process.php" method="POST">
                 <div class="mb-4">
-                  <label class="block text-gray-700 text-sm font-bold mb-2" for="hostname">
+                  <label class="block dark:text-gray-400 text-gray-700 text-sm font-bold mb-2" for="hostname">
                     Title
                   </label>
                   <input
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    class="shadow dark:text-white dark:border-gray-600 dark:bg-gray-700 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     id="title" type="text" name="title" placeholder="Title" value="<?= $title ?>">
                   <input hidden
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -506,12 +506,12 @@ while ($row = mysqli_fetch_array($result)) {
                   <input class=" appearance-none border rounded mr-2 text-gray-700 leading-tight" name="is_active"
                     id="is_active" type="checkbox" <?php if ($is_active == 1)
                       echo "checked"; ?> placeholder="">
-                  <label class="block text-gray-700 text-sm font-bold" for="hostname">
+                  <label class="block dark:text-gray-400 text-gray-700 text-sm font-bold" for="hostname">
                     Active ?
                   </label>
                 </div>
                 <div class="mb-4">
-                  <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                  <label class="block dark:text-gray-400 text-gray-700 text-sm font-bold mb-2" for="username">
                     Description
                   </label>
                   <textarea
@@ -520,41 +520,49 @@ while ($row = mysqli_fetch_array($result)) {
                     placeholder="Username"><?= $description ?> </textarea>
                 </div>
                 <div class="mb-4">
-                  <label class="block text-gray-700 text-sm font-bold mb-2" for="currency">
+                  <label class="block dark:text-gray-400 text-gray-700 text-sm font-bold mb-2" for="currency">
                     Currency
                   </label>
                   <input
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    class="shadow dark:text-white dark:border-gray-600 dark:bg-gray-700 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     id="currency" name="currency" type="text" placeholder="currency" value="<?= $currency ?>">
                 </div>
                 <div class="mb-4">
-                  <label class="block text-gray-700 text-sm font-bold mb-2" for="Price">
+                  <label class="block dark:text-gray-400 text-gray-700 text-sm font-bold mb-2" for="Price">
                     Price
                   </label>
                   <input
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    class="shadow dark:text-white dark:border-gray-600 dark:bg-gray-700 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     id="price" name="price" type="number" placeholder="Price" value="<?= $price ?>">
                 </div>
                 <div class="mb-4">
-                  <label class="block text-gray-700 text-sm font-bold mb-2" for="uom">
+                  <label class="block dark:text-gray-400 text-gray-700 text-sm font-bold mb-2" for="uom">
                     UOM
                   </label>
                   <input
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    class="shadow dark:text-white dark:border-gray-600 dark:bg-gray-700 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     id="uom" name="uom" type="text" placeholder="UOM" value="<?= $uom ?>">
                 </div>
                 <div class="mb-4">
-                  <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                  <label class="block dark:text-gray-400 text-gray-700 text-sm font-bold mb-2" for="username">
                     Benefit
                   </label>
                   <textarea
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     id="blogcontent1" name="benefit" type="text" placeholder="Username"><?= $benefit ?> </textarea>
                 </div>
+                <div class="mb-4">
+                  <label class="block dark:text-gray-400 text-gray-700 text-sm font-bold mb-2" for="username">
+                    Images
+                  </label>
+                  <a class="bg-blue-500 text-white p-1 rounded-md" target="_blank"
+                    href="drag_drop.php?id=<?= $id ?>">Update
+                    Image</a>
+                </div>
                 <div class="flex items-center justify-left">
                   <a href="index.php">
                     <button id="cancelButton"
-                      class="bg-white shadow-sm font-bold py-2 px-4 mr-2 rounded focus:outline-none focus:shadow-outline"
+                      class="bg-white dark:text-gray-400 dark:border-gray-600 dark:bg-gray-700 shadow-sm font-bold py-2 px-4 mr-2 rounded focus:outline-none focus:shadow-outline"
                       type="button">
                       Cancel
                     </button>
