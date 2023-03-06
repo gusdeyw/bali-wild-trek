@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +21,7 @@
                 <div x-data="{ open: false }"
                     class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row">
                     <div class="flex flex-row items-center justify-between p-4">
-                        <a href="#"
+                        <a href="/"
                             class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Bali
                             Wild Trek</a>
                         <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
@@ -37,7 +39,7 @@
                     <nav :class="{'flex': open, 'hidden': !open}"
                         class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
                         <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                            href="#">Home</a>
+                            href="/">Home</a>
                         <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                             href="activity-list.php">Activity</a>
                     </nav>
@@ -87,7 +89,8 @@
                 <div class="bg-white filter rounded-2xl drop-shadow-lg col-span-1">
                     <a href="activity.php?id=<?=$id?>" class="">
                         <img class="object-cover h-56 w-full rounded-t-2xl" loading="lazy" src="<?=$image_link2?>">
-                        <p class="text-center font-bold text-[#63B8C6] text-xl"><?= $title?></p>
+                        <p class="text-center font-bold text-[#63B8C6] text-xl">
+                            <?=mb_strimwidth($title, 0, 30, "...");?></p>
                         <div class="flex justify-center p-4">
                             <button class="px-6 py-2 rounded-lg bg-[#63B8C6] text-white font-bold">See detail</button>
                         </div>
