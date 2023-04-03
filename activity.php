@@ -111,7 +111,7 @@ while ($row = mysqli_fetch_array($result)) {
     <title>Bali Wild Track</title>
 </head>
 
-<body>
+<body class="w-screen">
     <!-- Navbar -->
     <div class="w-10/12 mx-auto">
         <div class="antialiased bg-gray-100 dark-mode:bg-gray-900">
@@ -161,7 +161,7 @@ while ($row = mysqli_fetch_array($result)) {
             <h4 class="font-normal text-blue-500 text-2xl">Playing On A Tour</h4>
         </div>
         <div class="grid grid-cols-5 mt-7">
-            <div class="col-span-5 md:col-span-3">
+            <!-- <div class="col-span-5 md:col-span-3">
                 <div class="mb-4 h-[13rem] md:h-[35rem]">
                     <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
                         class="mt-5 swiper mySwiper2 swiper-initialized swiper-horizontal">
@@ -199,7 +199,7 @@ while ($row = mysqli_fetch_array($result)) {
                 <div class="w-full mt-2">
                     <?= $description ?>
                 </div>
-            </div>
+            </div> -->
             <div class="col-span-5 md:col-span-2 mt-6 md:mt-0 md:ml-6">
                 <p class="text-3xl font-bold"><?=$currency?> <?=$price?>/<?=$uom?></p>
                 <p class="text-xl">Benefit :</p>

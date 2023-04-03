@@ -37,9 +37,12 @@
                 <div x-data="{ open: false }"
                     class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row">
                     <div class="flex flex-row items-center justify-between p-4">
-                        <a href="/"
-                            class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Bali
-                            Wild Trek</a>
+                        <div class="flex gap-3">
+                            <img class="w-8" src="public/logo.webp" alt="">
+                            <a href="/"
+                                class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Bali
+                                Wild Trek</a>
+                        </div>
                         <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
                             @click="open = !open">
                             <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -65,14 +68,34 @@
     </div>
     <div class="w-full bg-cover bg-no-repeat text-white bg-center h-96 md:h-screen"
         style="background-image: url(admin/assets/img/2.jpg);">
-        <div class="w-10/12 mx-auto pt-36">
+        <div class="w-10/12 mx-auto p-5 sm:p-10 md:pt-36">
             <h1 class="md:text-7xl text-5xl font-inter text-center font-bold">Bali Wild Trek</h1>
             <h3 class="text-center md:text-2xl pt-5 font-roboto">Unlimited Adventure in Bali Island</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-[30px] h-[30px] md:w-[40px] md:h-[40px] mx-auto mt-14"
-                fill="white" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="w-[30px] h-[30px] md:w-[40px] md:h-[40px] mx-auto mt-4 sm:mt-14" fill="white"
+                class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                     d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
             </svg>
+            <div class="bg-white rounded-2xl md:w-96 p-4 mx-auto mt-12 grid grid-cols-6 md:grid-cols-6">
+                <div class="col-span-1">
+                    <a href="https://wa.me/6287862976304?text=Hello%2C%20I%20have%20interest%20on%20you%20services"><i
+                            class="fa-brands fa-square-whatsapp text-4xl text-[#1FACCB]"></i></a>
+                </div>
+                <div class="col-span-1">
+                    <a href="https://www.facebook.com/balwildtrek?mibextid=LQQJ4d"><i
+                            class="fa-brands fa-square-facebook text-4xl text-[#1FACCB]"></i></a>
+                </div>
+                <div class="col-span-1">
+                    <a href="https://instagram.com/baliwildtrek?igshid=YmMyMTA2M2Y="><i
+                            class="fa-brands fa-square-instagram text-4xl text-[#1FACCB]"></i></a>
+                </div>
+                <div class="col-span-3">
+                    <a href="https://wa.me/6287862976304?text=Hello%2C%20I%20have%20interest%20on%20you%20services">
+                        <button class="text-white bg-[#1FACCB] font-bold rounded-2xl  w-full h-full">Book Now</button>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
