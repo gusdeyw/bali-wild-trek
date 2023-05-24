@@ -1,7 +1,7 @@
 <?php
-$host = "localhost:3308";
+$host = "localhost:3306";
 $user = "root";
-$pass = "cakratendados";
+$pass = "";
 $db = "bali_wild_trek";
 
 // $host = "localhost";
