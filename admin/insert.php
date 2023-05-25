@@ -461,7 +461,16 @@
                   <label class="block text-gray-700 text-sm font-bold mb-2 dark:text-gray-400" for="hostname">
                     Title
                   </label>
-                  <input class="shadow dark:text-white appearance-none border dark:border-gray-600 dark:bg-gray-700 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="title" type="text" name="title" placeholder="Title">
+                  <input class="shadow dark:text-white appearance-none border dark:border-gray-600 dark:bg-gray-700 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="inputSlug" required type="text" name="title" placeholder="Title">
+                </div>
+                <div class="mb-4">
+                  <label class="block text-gray-700 text-sm font-bold mb-2 dark:text-gray-400" for="hostname">
+                    Slug
+                  </label>
+                  <input id="slugField" class="shadow dark:text-white appearance-none border dark:border-gray-600 dark:bg-gray-700 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required  type="text" name="slug" placeholder="Slug">
+                  <button onclick="convertInputToSlug()" style="margin-top: 6px;" type="button" class="bg-blue-500 text-white font-bold py-2 px-4 mx-2 rounded focus:outline-none focus:shadow-outline">
+                    Generate
+                  </button>
                 </div>
                 <div class="mb-4 flex">
                   <input class=" appearance-none border rounded mr-2 text-gray-700 leading-tight" name="is_active" id="is_active" type="checkbox" placeholder="">
@@ -519,6 +528,18 @@
 </body>
 
 </html>
+
+<script>
+  function convertToSlug(text) {
+    return text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]+/g, '');
+  }
+
+  function convertInputToSlug() {
+    var inputText = document.getElementById('inputSlug').value;
+    var slug = convertToSlug(inputText);
+    document.getElementById('slugField').value = slug;
+  }
+</script>
 
 <script>
   $(document).ready(function() {

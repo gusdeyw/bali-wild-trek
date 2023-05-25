@@ -1,16 +1,9 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
+  content: ["*.{html,js,php}",
+  "./header/**/*.{html,js,php}"],
   theme: {
-    extend: {
-      zIndex: {
-        100: '999999999',
-      },
-      fontFamily: {
-        inter: ['Inter'],
-        roboto: ['Roboto'],
-        patua: ['Patua'],
-        courgette: ['Courgette'],
-        pacifico: ['Pacifico'],
-      },
-    },
+    extend: {},
   },
-};
+  plugins: [],
+}
