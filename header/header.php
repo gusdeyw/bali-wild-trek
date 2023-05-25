@@ -3,7 +3,7 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-1SWJQV1SJJ"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1SWJQV1SJJ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -13,7 +13,7 @@
         gtag('js', new Date());
 
         gtag('config', 'G-1SWJQV1SJJ');
-    </script> -->
+    </script>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
