@@ -49,7 +49,7 @@ include "header/header.php";
 
 <body>
     <?php include "header/navbar.php" ?>
-    <div class="w-full bg-cover bg-no-repeat text-white bg-center h-96 md:h-screen" style="background-image: url(admin/assets/img/2.jpg);">
+    <div class="w-full bg-cover bg-no-repeat text-white bg-center h-96 md:h-screen" style="background-image: url(admin/assets/img/2.webp);">
         <div class="w-10/12 mx-auto p-5 sm:p-10 md:pt-36">
             <h1 class="md:text-7xl text-5xl font-inter text-center font-bold">Bali Wild Trek</h1>
             <h3 class="text-center md:text-2xl pt-5 font-roboto">Unlimited Adventure in Bali Island</h3>
@@ -138,7 +138,8 @@ include "header/header.php";
                 <div class="md:col-span-1 col-span-3">
                     <div class="bg-white filter rounded-2xl drop-shadow-lg col-span-1">
                         <a href="activity/<?= $slug ?>" class="">
-                            <img class="object-cover h-56 w-full rounded-t-2xl" loading="lazy" src="<?= $image_link2 ?>">
+                        <?php $end = explode("/", $image_link2); ?>
+                            <img class="object-cover h-56 w-full rounded-t-2xl" loading="lazy" src="<?= $image_link2 ?>" alt="<?= $end ?>">
                             <p class="text-center font-bold text-[#63B8C6] text-xl">
                                 <?= mb_strimwidth($title, 0, 30, "..."); ?></p>
                             <div class="flex justify-center p-4">
