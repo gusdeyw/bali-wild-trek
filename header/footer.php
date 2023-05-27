@@ -25,7 +25,7 @@ while ($row1 = mysqli_fetch_array($result1)) {
             <div class="col-span-6 md:col-span-2">
                 <div style="overflow:hidden;max-width:100%;width:500px;height:300px;">
                     <div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Jl.+Ciung+Wanara+No.10,+Sangeh,+Kecamatan+Abiansemal,+Badung+Regency,+Bali,+Indonesia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-                    </div><a class="embed-ded-maphtml" href="https://www.bootstrapskins.com/themes" id="authmaps-data"></a>
+                    </div><a class="embed-ded-maphtml" aria-label="Go to our places!" href="https://www.bootstrapskins.com/themes" id="authmaps-data"></a>
                     <style>
                         #embed-map-display img {
                             max-width: none !important;
