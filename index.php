@@ -52,19 +52,19 @@ include "header/header.php";
     <div class="w-full bg-cover bg-no-repeat text-white bg-center h-96 md:h-screen" style="background-image: url(admin/assets/img/2.webp);">
         <div class="w-10/12 mx-auto p-5 sm:p-10 md:pt-36">
             <h1 class="md:text-7xl text-5xl font-inter text-center font-bold">Bali Wild Trek</h1>
-            <h3 class="text-center md:text-2xl pt-5 font-roboto">Unlimited Adventure in Bali Island</h3>
+            <h2 class="text-center md:text-2xl pt-5 font-roboto">Unlimited Adventure in Bali Island</h3>
             <svg xmlns="https://www.w3.org/2000/svg" class="w-[30px] h-[30px] md:w-[40px] md:h-[40px] mx-auto mt-4 sm:mt-14" fill="white" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
             </svg>
             <div class="bg-white rounded-2xl md:w-96 p-4 mx-auto mt-12 grid grid-cols-6 md:grid-cols-6">
                 <div class="col-span-1">
-                    <a href="https://wa.me/<?= $whatsapp ?>?text=Hello%2C%20I%20have%20interest%20on%20you%20services"><i class="fa-brands fa-square-whatsapp text-4xl text-[#1FACCB]"></i></a>
+                    <a aria-label="Whatsapp us now!" href="https://wa.me/<?= $whatsapp ?>?text=Hello%2C%20I%20have%20interest%20on%20you%20services"><i class="fa-brands fa-square-whatsapp text-4xl text-[#1FACCB]"></i></a>
                 </div>
                 <div class="col-span-1">
-                    <a href="<?= $facebook ?>"><i class="fa-brands fa-square-facebook text-4xl text-[#1FACCB]"></i></a>
+                    <a aria-label="Visit our Facebook now!" href="<?= $facebook ?>"><i class="fa-brands fa-square-facebook text-4xl text-[#1FACCB]"></i></a>
                 </div>
                 <div class="col-span-1">
-                    <a href="<?= $instagram ?>"><i class="fa-brands fa-square-instagram text-4xl text-[#1FACCB]"></i></a>
+                    <a aria-label="Checkout our Instagram!" href="<?= $instagram ?>"><i class="fa-brands fa-square-instagram text-4xl text-[#1FACCB]"></i></a>
                 </div>
                 <div class="col-span-3">
                     <a href="https://wa.me/<?= $whatsapp ?>?text=Hello%2C%20I%20have%20interest%20on%20you%20services">
@@ -137,7 +137,7 @@ include "header/header.php";
             ?>
                 <div class="md:col-span-1 col-span-3">
                     <div class="bg-white filter rounded-2xl drop-shadow-lg col-span-1">
-                        <a href="activity/<?= $slug ?>" class="">
+                        <a aria-label="Our great activities" href="activity/<?= $slug ?>" class="">
                         <?php $end = explode("/", $image_link2); ?>
                             <img class="object-cover h-56 w-full rounded-t-2xl" loading="lazy" src="<?= $image_link2 ?>" alt="<?= $end ?>">
                             <p class="text-center font-bold text-[#63B8C6] text-xl">
@@ -181,7 +181,7 @@ include "header/header.php";
                     </div>
                     <div class="flex justify-end gap-3 mt-2">
                         <button class="px-6 py-1 bg-[#1FACCB]">
-                            <a href="#" class="text-white font-bold font-roboto">Next</a>
+                            <a aria-label="Find out more!" href="/activity-list" class="text-white font-bold font-roboto">Next</a>
                         </button>
                         <button class="px-3 py-1 bg-[#1FACCB]">
                             <svg xmlns="https://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -206,9 +206,9 @@ include "header/header.php";
                     familiar with local culture, history and tradition
                 </p>
                 <div class="flex gap-4 text-6xl mt-3">
-                    <a href="https://wa.me/<?= $whatsapp ?>?text=Hello%2C%20I%20have%20interest%20on%20you%20services"><i class="fa-brands fa-square-whatsapp text-[#1FACCB]"></i></a>
-                    <a href="<?= $facebook ?>"><i class="fa-brands fa-square-facebook text-[#1FACCB]"></i></a>
-                    <a href="<?= $instagram ?>"><i class="fa-brands fa-square-instagram text-[#1FACCB]"></i></a>
+                    <a aria-label="Whatsapp us now!" href="https://wa.me/<?= $whatsapp ?>?text=Hello%2C%20I%20have%20interest%20on%20you%20services"><i class="fa-brands fa-square-whatsapp text-[#1FACCB]"></i></a>
+                    <a aria-label="Visit our Facebook now!" href="<?= $facebook ?>"><i class="fa-brands fa-square-facebook text-[#1FACCB]"></i></a>
+                    <a aria-label="Checkout our Instagram!" href="<?= $instagram ?>"><i class="fa-brands fa-square-instagram text-[#1FACCB]"></i></a>
                 </div>
             </div>
             <div class="col-span-2 md:col-span-1">
