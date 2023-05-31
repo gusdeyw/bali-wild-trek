@@ -6,7 +6,7 @@ $db_info = array(
     // "bali_wild_trek"
     "localhost",
     "baliwild_bali_wild_trek",
-    "WEBgusde123",
+    "WEBgusde123!",
     "baliwild_bali_wild_trek"
 );
 class DatabaseConnection
