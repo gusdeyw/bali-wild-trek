@@ -22,7 +22,7 @@ if ($_POST['mode'] == "insert") {
         "is_active" => $is_active
     ));
     if ($record) {
-        header("Location: index.php");
+        header("Location: activity.php");
     } else {
         echo "Error: Contact Administrator";
     }
@@ -39,8 +39,6 @@ if ($_POST['mode'] == "insert") {
 
     if ($_POST['is_active']) {
         $is_active = 1;
-    } else {
-        echo "Error: Contact Administrator";
     }
 
     $record = $crud->update('activity', $id, array(
@@ -54,7 +52,7 @@ if ($_POST['mode'] == "insert") {
         "is_active" => $is_active
     ));
     if ($record) {
-        header("Location: index.php");
+        header("Location: activity.php");
     } else {
         echo "Error: Contact Administrator";
     }
@@ -62,7 +60,7 @@ if ($_POST['mode'] == "insert") {
     $id = $_GET['id_delete'];
     $record = $crud->delete('activity', $id);
     if ($record) {
-        header("Location: index.php");
+        header("Location: activity.php");
     } else {
         echo "Error: Contact Administrator";
     }

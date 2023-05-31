@@ -97,7 +97,7 @@ include "component/header.php";
                   Image</a>
               </div>
               <div class="flex items-center justify-left">
-                <a href="index.php">
+                <a href="activity.php">
                   <button id="cancelButton" class="bg-white dark:text-gray-400 dark:border-gray-600 dark:bg-gray-700 shadow-sm font-bold py-2 px-4 mr-2 rounded focus:outline-none focus:shadow-outline" type="button">
                     Cancel
                   </button>

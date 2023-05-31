@@ -70,7 +70,7 @@ include "component/header.php";
                                 <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="blogcontent1" name="benefit" type="text" placeholder="Username"> </textarea>
                             </div>
                             <div class="flex items-center justify-left">
-                                <a href="index.php">
+                                <a href="activity.php">
                                     <button id="cancelButton" class="bg-white dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 shadow-sm font-bold py-2 px-4 mr-2 rounded focus:outline-none focus:shadow-outline" type="button">
                                         Cancel
                                     </button>
