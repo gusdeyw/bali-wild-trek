@@ -40,7 +40,7 @@ include "component/header.php";
                                 revenue
                             }) => ({
                                 date,
-                                revenue
+                                revenue: parseInt(revenue) 
                             }));
                             console.log(filteredData);
 
