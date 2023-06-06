@@ -55,7 +55,7 @@ include "header/header.php";
                 <svg xmlns="https://www.w3.org/2000/svg" class="w-[30px] h-[30px] md:w-[40px] md:h-[40px] mx-auto mt-4 sm:mt-14" fill="white" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
                 </svg>
-                <div class="bg-white rounded-2xl md:w-96 p-4 mx-auto mt-12 grid grid-cols-6 md:grid-cols-6">
+                <div id="bookButton" class="bg-white rounded-2xl md:w-96 p-4 mx-auto mt-12 grid grid-cols-6 md:grid-cols-6">
                     <div class="col-span-1">
                         <a aria-label="Whatsapp us now!" href="https://wa.me/<?= $whatsapp ?>?text=Hello%2C%20I%20have%20interest%20on%20you%20services"><i class="fa-brands fa-square-whatsapp text-4xl text-[#1FACCB]"></i></a>
                     </div>
@@ -66,7 +66,7 @@ include "header/header.php";
                         <a aria-label="Checkout our Instagram!" href="<?= $instagram ?>"><i class="fa-brands fa-square-instagram text-4xl text-[#1FACCB]"></i></a>
                     </div>
                     <div class="col-span-3">
-                        <a href="https://wa.me/<?= $whatsapp ?>?text=Hello%2C%20I%20have%20interest%20on%20you%20services">
+                        <a href="https://booking.baliwildtrek.com/">
                             <button class="text-white bg-[#1FACCB] font-bold rounded-2xl  w-full h-full">Book Now</button>
                         </a>
                     </div>
