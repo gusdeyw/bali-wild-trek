@@ -1,13 +1,13 @@
 <?php
 $db_info = array(
-    // "localhost:3306",
-    // "root",
-    // "",
-    // "bali_wild_trek"
-    "localhost",
-    "baliwild_bali_wild_trek",
-    "WEBgusde123!",
-    "baliwild_bali_wild_trek"
+    "localhost:3305",
+    "root",
+    "",
+    "bali_wild_trek"
+    // "localhost",
+    // "baliwild_bali_wild_trek",
+    // "WEBgusde123!",
+    // "baliwild_bali_wild_trek"
 );
 class DatabaseConnection
 {

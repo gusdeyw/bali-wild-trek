@@ -1,16 +1,17 @@
 RewriteEngine On
 
-# Redirect non-www to www canonical URL
-RewriteCond %{HTTP_HOST} ^yourdomain\.com$ [NC]
-RewriteRule ^(.*)$ http://www.yourdomain.com/$1 [L,R=301]
+# # Redirect non-www to www canonical URL
+# RewriteCond %{HTTP_HOST} ^yourdomain\.com$ [NC]
+# RewriteRule ^(.*)$ http://www.yourdomain.com/$1 [L,R=301]
 
-# Redirect HTTP to HTTPS canonical URL
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://www.yourdomain.com/$1 [L,R=301]
+# # Redirect HTTP to HTTPS canonical URL
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://www.yourdomain.com/$1 [L,R=301]
 
-# Rewrite rule with [L] flag
-RewriteRule ^activity/([^/]+)$ activity.php?slug=$1 [L]
 
 # Additional rewrite rules
 RewriteRule ^home$ index.php [L]
 RewriteRule ^activity-list$ activity-list.php [L]
+
+# Rewrite rule with [L] flag
+RewriteRule ^activity/([^/]+)$ activity.php?slug=$1 [L]
